@@ -4,7 +4,7 @@ import android.graphics.Typeface
 import br.com.insanitech.spritekit.graphics.SKColor
 import br.com.insanitech.spritekit.opengl.renderer.GLRenderer
 
-internal class SKLabelNode(fontName: String, style: Int) : SKNode() {
+open class SKLabelNode(fontName: String, style: Int) : SKNode() {
     override val isSurface: Boolean = true
 
     var verticalAlignmentMode: SKLabelVerticalAlignmentMode? = null
